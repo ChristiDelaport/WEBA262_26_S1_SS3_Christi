@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  /*background-color: #eef4fb;*/
+  background-color: #121826;
+  /*color: #1f2937;*/
+  color: #1f2937;
+}
+
+.page-header {
+  text-align: center;
+  /*background-color: #1d3557;*/
+  background-color: #050212;
+  color: white;
+  padding: 24px 16px;
+}
+
+.page-header h1 {
+  margin: 0 0 8px 0;
+}
+
+.page-header p {
+  margin: 0;
+}
+
+.container {
+  width: min(900px, 95%);
+  margin: 24px auto;
+}
+
+.game-window-wrap {
+  width: min(1000px, 96%);
+  margin: 20px auto;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.form-row {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.form-row input,
+.form-row select {
+  padding: 10px;
+  border: 1px solid #bcc7d3;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+fieldset {
+  border: 1px solid #cfd8e3;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  padding: 14px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 6px;
+}
+
+.option-line {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/*.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Improve button area appearance */
+.button-row {
+  justify-content: center;
+  margin: 15px 0;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  /* background-color: #457b9d;*/
+  background-color: #62c962;
+  color: white;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+button:hover {
+  background-color: #355f79;
+  /*background-color: #355f79;*/
+}
+
+button:disabled {
+  background-color: #8da3b3;
+  cursor: not-allowed;
+}
+
+/* change (move buttons into container above game area)  */
+/* style buttons inside message box */
+
+.in-message-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* make buttons slightly smaller inside box */
+.in-message-buttons button {
+  margin-top: 5px;
+  gap: 6px;
+}
+/* end change */
+/*change make box smaller*/
+.message-area {
+  min-height: auto;
+  padding: 8px 10px;
+  width: 70%;
+  margin: 10px auto;
+  background: #0f172a;
+  color: #e5eefc;
+  border-radius: 10px;
+  text-align: center; /* better alignment */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  white-space: pre-line;
+}
+message-area p {
+  margin: 0;
+  /* removes default paragraph spacing */
+}
+
+/* end change */
+
+* Slightly tighten signal mode text */ .signal-type-text {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #a5b4fc; /* light blue */
+  font-weight: bold;
+}
+
+.preview-box {
+  margin-top: 10px;
+  background-color: #eef5ff;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.stats-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.game-stats-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.stat-box {
+  background-color: #edf2f7;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.label {
+  display: block;
+  font-size: 0.85rem;
+  color: #4b5563;
+  margin-bottom: 4px;
+}
+
+.rule-area {
+  min-height: 54px;
+  background: #fff7d6;
+  border: 1px solid #ecd98b;
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 14px;
+  font-weight: bold;
+}
+
+.signal-area {
+  min-height: 260px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  user-select: none;
+  text-align: center;
+  padding: 20px;
+}
+
+.signal-area.waiting {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.signal-area.ready {
+  background: #16a34a;
+  color: white;
+}
+
+.signal-area.false-start {
+  background: #dc2626;
+  color: white;
+}
+
+.results-area {
+  min-height: 90px;
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 14px;
+  white-space: pre-line;
+}
+
+.message-area {
+  min-height: 70px;
+  background: #0f172a;
+  color: #e5eefc;
+  border-radius: 10px;
+  padding: 14px;
+  white-space: pre-line;
+}
+
+.log-area {
+  min-height: 120px;
+  max-height: 240px;
+  overflow-y: auto;
+  background: #111827;
+  color: #f9fafb;
+  border-radius: 10px;
+  padding: 14px;
+  white-space: pre-line;
+}
+
+.log-entry {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.page-footer {
+  text-align: center;
+  padding: 18px;
+  background-color: #1d3557;
+  color: white;
+  margin-top: 24px;
+}
+
+@media (max-width: 800px) {
+  .game-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .signal-area {
+    min-height: 200px;
+    font-size: 1.7rem;
+  }
+}
